@@ -42,14 +42,17 @@ function game(){
         const computerSelection = getComputerChoice(); 
         round = playRound(playerSelection, computerSelection); 
         if(round === 1){
+            alert("You won a round!")
             playerWins++;
         }
         else if (round === -1){
+            alert("You lost a round!")
             computerWins++; 
 
         }
 
         else {
+            alert("Its a draw!")
             playerWins++;
             computerWins;
         }
@@ -59,10 +62,10 @@ function game(){
       }
 
       if(playerWins > computerWins){
-        console.log("You won the game!")
+        alert("You won the game!")
       }
       else {
-        console.log("You lost the game!")
+        alert("You lost the game!")
       }
 }
 
