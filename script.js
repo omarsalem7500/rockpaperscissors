@@ -53,7 +53,8 @@ function game(){
 
         else {
             alert("Its a draw!")
-            
+            playerWins++;
+            computerWins++; 
         }
 
 
